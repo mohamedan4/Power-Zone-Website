@@ -8,6 +8,13 @@ The project was developed as a web development project using HTML, CSS, and Java
 >
 > The current version represents the implemented stage of the project. Additional workout programs, nutrition plans, user account features, database integration, progress tracking, and personalized features are planned for future development.
 
+## Project Demo
+
+Want to see the website without downloading the project?
+
+A short video showing the website is available in the `Documentation` folder.  
+It gives you a quick look at the main pages, navigation, animations, and interactive features.
+---
 ---
 
 ## Overview
@@ -28,6 +35,23 @@ The long-term goal is to develop Power Zone into a more complete fitness platfor
 ---
 
 ## Current Features
+
+## Responsive Design
+
+Power Zone was designed to provide a responsive experience across different screen sizes.
+
+The interface adapts elements such as:
+
+- Navigation
+- Images
+- Text
+- Layouts
+- Cards
+- Content sections
+
+The goal is to maintain a consistent and usable experience across desktop and mobile devices.
+
+---
 
 ### Home Page
 
@@ -193,68 +217,6 @@ The goal is to provide users with flexible options rather than a single fixed di
 
 ---
 
-## User Account
-
-Power Zone includes an Account page designed to provide users with a personalized fitness dashboard.
-
-The current interface includes:
-
-### Body Stats
-
-Users can enter and update:
-
-- Weight
-- Height
-
-The information is displayed dynamically within the account interface.
-
-### Active Programs
-
-The account dashboard includes sections for:
-
-- Current workout program
-- Current diet plan
-
-### Monthly Commitment
-
-The dashboard includes a visual progress section designed to represent the user's consistency and commitment to their selected programs.
-
-### Explore Plans
-
-Users can navigate from their account dashboard to the Plans section to explore available workout and nutrition programs.
-
----
-
-## Account Menu
-
-The Account page also includes an account management menu with options for:
-
-- Account Center
-- Account Settings
-- Report an Issue
-- Help & Support
-- Logout
-
-Some of these sections are planned for future development.
-
----
-
-## Login Interface
-
-The website includes an interactive login interface developed using JavaScript.
-
-The current login interface includes:
-
-- Email Address
-- Password
-- Login button
-- Loading state
-- Account navigation
-
-When the user submits the login form, the interface displays a temporary loading state before navigating to the Account page.
-
-The current implementation is a front-end prototype and does not yet include a real authentication system or database.
-
 ### Planned Authentication Features
 
 Future development will include:
@@ -265,38 +227,6 @@ Future development will include:
 - Secure authentication
 - User account management
 - Persistent user data
-
----
-
-## Responsive Design
-
-Power Zone was designed to provide a responsive experience across different screen sizes.
-
-The interface adapts elements such as:
-
-- Navigation
-- Images
-- Text
-- Layouts
-- Cards
-- Content sections
-
-The goal is to maintain a consistent and usable experience across desktop and mobile devices.
-
----
-
-## Company Pages
-
-The website also includes several informational pages:
-
-- Our Story
-- Privacy Policy
-- Careers
-- Services
-
-These pages currently provide the basic structure of the platform's company and information sections.
-
-As Power Zone develops into a real platform in the future, these sections can be expanded with official company information, policies, and legal content.
 
 ---
 
@@ -342,6 +272,7 @@ Power-Zone-Website
 ├── README.md
 └── .gitignore
 
+
 ## Future Development
 
 Power Zone is an ongoing project and will continue to evolve.
@@ -365,14 +296,6 @@ Planned improvements include:
 - Exploring AI-powered personalization features
 
 The long-term vision is to create a more complete and personalized fitness platform that can adapt its recommendations to individual users and their fitness goals.
-
----
-
-## Project Demo
-
-A short video demonstration of the current Power Zone website is included in the `Documentation` folder.
-
-The demo showcases the current interface, navigation, animations, interactive elements, and main sections of the platform.
 
 ---
 
