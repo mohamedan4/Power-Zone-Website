@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Power Zone</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dash-body">
+
+    <div id="sideDrawer" class="drawer-overlay">
+        <div class="drawer-content">
+            <span class="drawer-close" onclick="toggleDrawer()">&times;</span>
+            <div class="drawer-header">
+                <i class="fas fa-user-shield"></i>
+                <h3>Account Center</h3>
+            </div>
+            <ul class="drawer-links">
+                <li><a href="#"><i class="fas fa-cog"></i> Account Settings</a></li>
+                <li><a href="#"><i class="fas fa-exclamation-triangle"></i> Report an Issue</a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i> Help & Support</a></li>
+                <li class="logout-link"><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dashboard-wrapper">
+        
+        <header class="dash-header">
+            <div class="user-welcome">
+                Welcome Back, <span id="dash-username">Warrior</span> <i class="fas fa-fire"></i>
+            </div>
+            <div class="menu-burger" onclick="toggleDrawer()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <main class="dash-content">
+            
+            <div class="stat-card">
+                <div class="card-icon"><i class="fas fa-weight"></i></div>
+                <h3>Body Stats</h3>
+                <div class="stat-item">Weight: <span id="user-weight">... kg</span></div>
+                <div class="stat-item">Height: <span id="user-height">... cm</span></div>
+                <button class="dash-btn" onclick="updateStats()">Update Stats</button>
+            </div>
+
+            <div class="stat-card">
+                <div class="card-icon"><i class="fas fa-dumbbell"></i></div>
+                <h3>Active Programs</h3>
+                <div class="stat-item">Workout: <span id="workout-plan">...</span></div>
+                <div class="stat-item">Diet Plan: <span id="diet-plan">...</span></div>
+                <a href="index.html#Plans" class="dash-btn btn-secondary">Explore Plans</a>
+            </div>
+
+            <div class="stat-card wide-card">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Monthly Commitment</h3>
+                <p class="progress-desc">Your consistency determines your results. Keep pushing!</p>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 75%;">75%</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script>
+        function toggleDrawer() {
+            const drawer = document.getElementById('sideDrawer');
+            if (drawer.style.display === 'flex') {
+                drawer.style.display = 'none';
+            } else {
+                drawer.style.display = 'flex';
+            }
+        }
+
+        window.onclick = function(event) {
+            const drawer = document.getElementById('sideDrawer');
+            if (event.target == drawer) {
+                drawer.style.display = 'none';
+            }
+        }
+
+        function updateStats() {
+            let weight = prompt("Enter your current weight (kg):");
+            let height = prompt("Enter your height (cm):");
+            if(weight) document.getElementById('user-weight').innerText = weight + " kg";
+            if(height) document.getElementById('user-height').innerText = height + " cm";
+        }
+    </script>
+</body>
+</html>
