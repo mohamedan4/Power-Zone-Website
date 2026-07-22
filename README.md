@@ -12,8 +12,9 @@ The project was developed as a web development project using HTML, CSS, and Java
 
 Want to see the website without downloading the project?
 
-A short video showing the website is available in the `Assets` folder.  
+A short video showing the website is available on YOUTUBE.  
 It gives you a quick look at the main pages, navigation, animations, and interactive features.
+[Watch the Project Demo] (https://youtu.be/CmwjdVyOaX4?si=QnvgKQmUGgTPUUSq)
 ---
 ---
 
